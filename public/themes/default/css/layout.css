@@ -1,0 +1,330 @@
+/*
+--------------------------------------------------------------
+--- Reset {
+--------------------------------------------------------------
+*/
+* { margin: 0px; padding: 0px; }
+img { border: 0; }
+.clear { clear: both; }
+.hidden { display: none; }
+.fade { display: none; }
+/*
+}-------------------------------------------------------------
+--- Generic {
+--------------------------------------------------------------
+*/
+
+.wrapper { width: 72.4em; margin: 0 auto; overflow:hidden;}
+.left, .content-wrapper aside { float: left;}
+.right, .content-wrapper section { float: right; }
+a { text-decoration: none; color:#FE9F38}
+#footer-container a {color:#287E9F}
+#footer-container a:hover { color:#FE9F38}
+a:hover , li.selected a { text-decoration: none; color:#FECA91; }
+.lrg { font-size: 2.5em; }
+.fixed { position: fixed !important; }
+.absolute { position: absolute !important; }
+html {background:url('../i/background/burried.png');}
+/*
+}-------------------------------------------------------------
+--- Header {
+--------------------------------------------------------------
+*/ /* #7697C1 - blue #c78157 - brown  */
+#header-container , #footer-container {background:url('../i/background/redox_02.png');}
+#header-container p#title {font-size:2.5em; letter-spacing:0.15em; text-align:left; margin-top:0.7em; margin-left:1em; display:inline-block; width:22em; line-height:1em; color:black; }
+#header-container p#title span {font-size:0.7em;}
+img#logo {float:left; padding:0.75em 0em 0.5em 0em; margin-left:-1em;}			
+/*
+}-------------------------------------------------------------
+--- Body {
+--------------------------------------------------------------
+*/ 
+/* START - Default */
+h1 {font-size:3.5em; padding-bottom:0.15em; color:#FE9F38; font-weight:200; margin-bottom:0.75em;}
+h1.no-content {margin-bottom:0px;}
+h2 {font-size:2em; margin-bottom:1.5em; color:#FECA91; font-weight:200}
+h2.subtitle {font-size:1.5em; margin-bottom:0.5em;}
+h3 {margin-bottom:1em; color:#FECA91;}	
+
+	
+/* Nav */
+#nav-container {background:rgba(40, 126, 159, 0.3); margin-bottom:2em;}
+#nav-container nav ul li {float:left; padding:1em 1.59em 0.45em 1.59em; background:url('../i/header/dot.png') no-repeat 0px 19px;}
+#nav-container nav ul li.first {background-image:none; padding-left:1em;}
+#nav-container nav ul li.first a {padding-left:0em;}
+#nav-container nav ul li a {font-size:1.2em; padding-top:0.7em; font-weight:200;  }
+/* Slider */	
+#slides {position:relative; width:100%; overflow:hidden; }
+#slides div img {height:100%; border-radius:1em;}
+#slides .caption {position:absolute; top:2em; right:0em; width:26%; color:white; padding:2em 0em; font-size:1.2em;}	
+#slides .caption p {padding-bottom:1em;}
+#slides .caption ul {margin:0em;}
+#slides .caption ul li {background:url('../i/header/hover.png') no-repeat 0px; list-style-type:none; padding-left:1.5em; padding-bottom:0.5em; padding-top:0.5em;}		
+#slides .caption h2 {color:#FE9F38;}
+	
+#main {padding-bottom:2em; color:white;}
+section.content {padding:1em 2em; background:rgba(40, 126, 159, 0.3); border-radius:1em;}
+article.content-gap {column-count:2; column-gap:2em; -moz-column-count:2; -moz-column-gap:2em; -webkit-column-count:2; -webkit-column-gap:2em; margin-right:2em;}
+article.content p , article.content-gap p {line-height:1.6em; margin-bottom:1em;}
+article.content strong , article.content-gap strong {color:#FE9F38;}
+#main div.left {width:72%;}
+#main section.page-width-content div.left {width:46%; padding:1em 1em 1em 2em;}
+#main section.page-width-content div.left.first {padding-right:1.5em; padding-left:0em; border-right:1px solid #FE9F38;}
+#main div.left.aside {width:28%; height:100%;}
+
+aside {border-left:1px solid #FE9F38; height:100%; min-height:23em; padding:1.5em 0em 1.5em 1.5em;}
+aside p {margin-bottom:3em;}
+aside p.last {margin-bottom:0em;} 
+/* END - Default */
+
+/* START - Content Page */
+article.content header {margin-bottom:3em;}
+div.left ul {margin:1em;}
+div.left ul li {padding:0.5em 0em;}
+/* END - Content Page */
+
+/* START - Profile List */
+section.profile-list {padding:2em; margin-top:2em; }
+section.profile-list article {float:left; overflow:hidden; border-radius:10em; height:15em; width:15em; margin-right:1.7em; margin-top:3em; border:5px solid;}
+section.profile-list article:nth-child(4n+4) {margin-right:0em;}
+section.profile-list article img {height:100%}
+/* END - Profile List */
+
+/* START - Profile */
+article.profile {margin-top:2em; margin-right:2em;}
+article.profile p {line-height:1.6em; margin-bottom:1em;}
+article.profile div.left {width:62%; margin-left:2em;}
+/* END - Profile */
+
+/* START - News List */
+.news .content {margin-bottom:2em;}
+.news-container .news-summery {margin-top:1em; margin-bottom:2em; padding:1em; background:rgba(40, 126, 159, 0.3); border-radius:1em;}
+.news-container .news-article {background:rgba(40, 126, 159, 0.3); border-radius:1em; padding:1em;}
+.news-container div.news-content {float:left; width:48em; padding-right:4em; border-right:1px solid #FE9F38;}
+.news-container h2 {margin-bottom:0.5em;}
+.news-container p {line-height:1.6em; margin-bottom:0.5em;}
+.news-container p.read-more {margin-bottom:0em; float:right;}
+.news-container aside {float:left; width:17em; padding-left:3em; padding-bottom:2em; padding-top:0em; margin-top:1em; min-height:none; border:none;}
+.news-container aside h3 {font-size:1.5em;}
+.news-container aside ul {list-style-type:none; margin-left:0em;}
+.news-container aside ul li {padding-bottom:1em;}
+.news-container aside ul li a {}		
+/* END - News List */
+
+/* START - News Article */
+.news-content {}
+/* END - News Article */
+
+/* START - Contact Page */
+article.contact {}
+/* END - Contact Page */
+
+/*
+}-------------------------------------------------------------
+--- Footer {
+--------------------------------------------------------------
+*/
+
+p.charity {text-align:center; width:100%;  padding:0.5em 0em; font-size:0.9em;}
+#bucket-container {padding:1em;}
+#bucket-container div.bucket {width:30%; float:left; padding:0.5em 1em 0.5em 1em; }
+#bucket-container div.bucket h3 {margin-bottom:1em; color:#444; font-size:1.3em; border-bottom:1px solid ; padding-bottom:1em; font-weight:200;}
+/* Footer form */
+#bucket-container div.bucket form {margin-top:1em;}
+#bucket-container div.bucket form label {width:100%; display:block; margin-bottom:0.25em;}
+#bucket-container div.bucket form textarea {width:100%; margin-bottom:1em; padding:0.3em; border:none; resize:none; height:4.5em;}
+#bucket-container div.bucket form input {width:100%; margin-bottom:1em; padding:0.3em; border:none;}
+#bucket-container div.bucket form input#Form_ContactForm_action_doForm {margin-bottom:0em; width:25%;}				
+#bucket-container ul.col {width:46%; margin:0em 0.5em 0em 0em; list-style-type:none;}
+#bucket-container ul.col.right {margin-right:0em;}
+#bucket-container ul.col li {padding-bottom:0.25em;}
+
+/*
+}-------------------------------------------------------------
+--- Font {
+--------------------------------------------------------------
+*/
+/* Font Face */
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-regular-webfont.eot');
+    src: url('../f/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-regular-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-regular-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-regular-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-semibold-webfont.eot');
+    src: url('../f/opensans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-semibold-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-semibold-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-semibolditalic-webfont.eot');
+    src: url('../f/opensans/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-semibolditalic-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-bold-webfont.eot');
+    src: url('../f/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-bold-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-bold-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-bold-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-bolditalic-webfont.eot');
+    src: url('../f/opensans/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-bolditalic-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-bolditalic-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-italic-webfont.eot');
+    src: url('../f/opensans/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-italic-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-italic-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-italic-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-light-webfont.eot');
+    src: url('../f/opensans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-light-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-light-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-light-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../f/opensans/opensans-lightitalic-webfont.eot');
+    src: url('../f/opensans/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/opensans/opensans-lightitalic-webfont.woff') format('woff'),
+         url('../f/opensans/opensans-lightitalic-webfont.ttf') format('truetype'),
+         url('../f/opensans/opensans-lightitalic-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metanoia';
+    src: url('../f/metanoia/baarmrg_-webfont.eot');
+    src: url('../f/metanoia/baarmrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/metanoia/baarmrg_-webfont.woff') format('woff'),
+         url('../f/metanoia/baarmrg_-webfont.ttf') format('truetype'),
+         url('../f/metanoia/baarmrg_-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metanoia';
+    src: url('../f/metanoia/baarmi__-webfont.eot');
+    src: url('../f/metanoia/baarmi__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/metanoia/baarmi__-webfont.woff') format('woff'),
+         url('../f/metanoia/baarmi__-webfont.ttf') format('truetype'),
+         url('../f/metanoia/baarmi__-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metanoia';
+    src: url('../f/metanoia/baarmb__-webfont.eot');
+    src: url('../f/metanoia/baarmb__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/metanoia/baarmb__-webfont.woff') format('woff'),
+         url('../f/metanoia/baarmb__-webfont.ttf') format('truetype'),
+         url('../f/metanoia/baarmb__-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metanoia';
+    src: url('../f/metanoia/baarmbi_-webfont.eot');
+    src: url('../f/metanoia/baarmbi_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/metanoia/baarmbi_-webfont.woff') format('woff'),
+         url('../f/metanoia/baarmbi_-webfont.ttf') format('truetype'),
+         url('../f/metanoia/baarmbi_-webfont.svg#HelveticaRegular') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* declare the general fonts */
+* , html , body { font-family: 'OpenSans'; font-weight: normal; }
+h1 , h2 , h3 , h4 , h5 {font-family: 'Metanoia'; letter-spacing:0.1em;}
+/*
+}-------------------------------------------------------------
+--- IE Hacks {
+--------------------------------------------------------------
+*/
+.oldie section.content , .oldie #nav-container {background:#132c36;}
+/*
+}-------------------------------------------------------------
+--- IE7 Hacks {
+--------------------------------------------------------------
+*/
+/* NoIE styling */
+.oldie #NoIE { position: relative; background: #FEFFDB; border: 1px solid #FFDDB3; height: 40px; min-height: 40px; margin: 0 0 10px; padding: 10px; text-align: center; }
+.oldie #NoIE .close { position: absolute; top: 0; right: 0; color: red; cursor: pointer; }
+/*
+}-------------------------------------------------------------
+--- IE8 Hacks {
+--------------------------------------------------------------
+*/
+/*
+}-------------------------------------------------------------
+--- Media Queries {
+--------------------------------------------------------------
+*/
+
+/* portrait - iPad */
+@media only screen and (max-device-width: 1024px) and (orientation:portrait) { 
+
+} 
+/* landscape - iPad */
+@media only screen and (max-device-width: 1024px) and (orientation:landscape) { 
+ 	
+}
+/* portrait - iPhone */
+@media screen and (max-width: 320px) and (orientation:portrait){
+
+}
+/* landscape - iPhone */
+@media screen and (min-width: 321px) and (max-width: 480px) and (orientation:landscape) {
+
+}
+/*
+---------------------------------------------------------------
+}-- End of Stylesheet
+---------------------------------------------------------------
+*/
+
+

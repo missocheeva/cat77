@@ -1,23 +1,24 @@
 <?php
-class Page extends SiteTree {
+class ProfileListPage extends Page {
 
 	public static $db = array(
-		"SubTitle" => "VarChar(255)"
+		'ListImageAltText' => 'Varchar'
+		
 	);
 
 	public static $has_one = array(
+		'listImage' => 'Image'
 	);
-
+	
 	public function getCMSFields(){
-		$fields = parent::getCMSFields();
-		
-		$fields->addFieldToTab("Root.Main", new TextField("SubTitle","Sub Title"), "URLSegment");
-		
-		return $fields;
+			$fields = parent::getCMSFields();
+			
+			$fields->removeFieldFromTab('Root.Main','SubTitle');
+			return $fields;
 	}
 	
 }
-class Page_Controller extends ContentController {
+class ProfileListPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -40,13 +41,6 @@ class Page_Controller extends ContentController {
 	public function init() {
 		parent::init();
 
-		// Note: you should use SS template require tags inside your templates 
-		// instead of putting Requirements calls here.  However these are 
-		// included so that our older themes still work
-		//Requirements::themedCSS('reset');
-		//Requirements::themedCSS('layout'); 
-		//Requirements::themedCSS('typography'); 
-		//Requirements::themedCSS('form'); 
 	}
 
 }

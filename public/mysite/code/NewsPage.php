@@ -1,8 +1,8 @@
 <?php
-class Page extends SiteTree {
+class NewsPage extends Page {
 
 	public static $db = array(
-		"SubTitle" => "VarChar(255)"
+		"NewsSummary" => "HTMLText"
 	);
 
 	public static $has_one = array(
@@ -10,14 +10,12 @@ class Page extends SiteTree {
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
-		
-		$fields->addFieldToTab("Root.Main", new TextField("SubTitle","Sub Title"), "URLSegment");
-		
+		$fields->addFieldToTab('Root.Main', new HtmlEditorField('NewsSummary','News Letter Summary'),'Content');
 		return $fields;
 	}
 	
 }
-class Page_Controller extends ContentController {
+class NewsPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
