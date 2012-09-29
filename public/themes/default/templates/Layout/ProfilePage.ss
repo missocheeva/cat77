@@ -2,7 +2,7 @@
 	<h1>$Title</h1>
 	<article class="profile">
 		<div>
-			$CatImage.ID
+			$CatImage
 			
 			<% if $CatStatus %><p class="status">Lost or Found: <span>$CatStatus</span></p><% end_if %>
 			<% if $CatTemper %><p class="temper">Temperament: <span>$CatTemper</span></p><% end_if %>
