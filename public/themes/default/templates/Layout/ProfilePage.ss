@@ -1,8 +1,9 @@
 <section class="content">
 	<h1>$Title</h1>
 	<article class="profile">
-		<img class="left" src="$ListImage" alt="$ListImageAltText" />
 		<div>
+			$CatImage.ID
+			
 			<% if $CatStatus %><p class="status">Lost or Found: <span>$CatStatus</span></p><% end_if %>
 			<% if $CatTemper %><p class="temper">Temperament: <span>$CatTemper</span></p><% end_if %>
 			<% if $CatAge %><p class="age">Age: <span>$CatAge</span></p><% end_if %>

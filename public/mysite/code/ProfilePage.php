@@ -10,7 +10,7 @@ class ProfilePage extends Page {
 	);
 
 	public static $has_one = array(
-		'listImage' => 'Image'
+		'CatImage' => 'Image'
 	);
 	
 	public function getCMSFields(){
@@ -18,7 +18,7 @@ class ProfilePage extends Page {
 			
 			$fields->removeFieldFromTab('Root.Main','SubTitle');
 			
-			$fields->addFieldToTab('Root.Main', new FileField('ListImage','Cat List Image'));
+			$fields->addFieldToTab('Root.Main', new UploadField('CatImage','Cat List Image'));
 			$fields->addFieldToTab('Root.Main', new TextField('ListImageAltText','Cat List Image Alt Text'));
 			$fields->addFieldToTab('Root.Main', new TextField('CatStatus','For use on Lost cat page Missing or Found:'),"URLSegment");
 			$fields->addFieldToTab('Root.Main', new TextField('CatTemper','Cats Temperament e.g. Timid feral :'),"URLSegment");
