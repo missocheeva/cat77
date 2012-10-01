@@ -7,7 +7,7 @@ class ProfileListPage extends Page {
 	);
 
 	public static $has_one = array(
-		//'ListImage' => 'Image'
+		'CatImage' => 'Image'
 	);
 	
 	public function getCMSFields(){

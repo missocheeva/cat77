@@ -15,16 +15,14 @@ img { border: 0; }
 */
 
 .wrapper { width: 72.4em; margin: 0 auto; overflow:hidden;}
-.left, .content-wrapper aside { float: left;}
-.right, .content-wrapper section { float: right; }
+.left { float: left;}
+.right { float: right; }
 a { text-decoration: none; color:#FE9F38}
 #footer-container a {color:#287E9F}
 #footer-container a:hover { color:#FE9F38}
 a:hover , li.selected a { text-decoration: none; color:#FECA91; }
-.lrg { font-size: 2.5em; }
-.fixed { position: fixed !important; }
-.absolute { position: absolute !important; }
 html {background:url('../i/background/burried.png');}
+::selection , -moz-::selection {background:#7c7676;}
 /*
 }-------------------------------------------------------------
 --- Header {
@@ -84,16 +82,18 @@ div.left ul li {padding:0.5em 0em;}
 /* END - Content Page */
 
 /* START - Profile List */
-section.profile-list {padding:2em; margin-top:2em; }
+section.profile-list {padding:2em; padding-top:0em;}
 section.profile-list article {float:left; overflow:hidden; border-radius:10em; height:15em; width:15em; margin-right:1.7em; margin-top:3em; border:5px solid;}
 section.profile-list article:nth-child(4n+4) {margin-right:0em;}
-section.profile-list article img {height:100%}
+section.profile-list article img {height:195px;}
 /* END - Profile List */
 
 /* START - Profile */
-article.profile {margin-top:2em; margin-right:2em;}
+section.content.profile {padding:2em 2em;}
+article.profile {margin-top:0em; margin-right:2em;}
 article.profile p {line-height:1.6em; margin-bottom:1em;}
 article.profile div.left {width:62%; margin-left:2em;}
+article.profile img {width:35em; float:left; margin-right:3em; border-radius:1em;}
 /* END - Profile */
 
 /* START - News List */

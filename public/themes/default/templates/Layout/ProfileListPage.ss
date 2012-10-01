@@ -6,7 +6,7 @@
 	<% control Children %>
 		<article>
 			<a href="$Link" title="$MenuTitle">
-				<img <% control $ListImage %>src="$Image.URL" <% end_control %> alt="$ListImageAltText" width="195" height="195"/>
+					$CatImage
 			</a>	
 		</article>
 	<% end_control %>		
