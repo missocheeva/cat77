@@ -8,6 +8,15 @@ Vagrant::Config.run do |config|
     chef.json = {
       "mysql" => {
         "server_root_password" => "omega"
+      },
+      "apache" => {
+        "prefork" => {
+          "startservers" => 4,
+          "minspareservers" => 4,
+          "maxspareservers" => 8,
+          "serverlimit" => 32,
+          "maxclients" => 32
+        }
       }
     }
     
