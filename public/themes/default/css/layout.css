@@ -17,10 +17,13 @@ img { border: 0; }
 .wrapper { width: 72.4em; margin: 0 auto; overflow:hidden;}
 .left { float: left;}
 .right { float: right; }
-a { text-decoration: none; color:#FE9F38}
-#footer-container a {color:#287E9F}
-#footer-container a:hover { color:#FE9F38}
-a:hover , li.selected a { text-decoration: none; color:#FECA91; }
+a { text-decoration: none; color:#FF846A; }
+a:hover {color:#FFA491}
+nav a {color:#FE9F38}
+nav a:hover , li.selected a { text-decoration: none; color:#FECA91; }
+
+#footer-container a:hover  {color:#287E9F}
+#footer-container a{ color:#356578}
 html {background:url('../i/background/burried.png');}
 ::selection , -moz-::selection {background:#7c7676;}
 /*
@@ -42,9 +45,10 @@ h1 {font-size:3.5em; padding-bottom:0.15em; color:#FE9F38; font-weight:200; marg
 h1.no-content {margin-bottom:0px;}
 h2 {font-size:2em; margin-bottom:1.5em; color:#FECA91; font-weight:200}
 h2.subtitle {font-size:1.5em; margin-bottom:0.5em;}
-h3 {margin-bottom:1em; color:#FECA91;}	
+h3 {margin-bottom:1em; color:#FE9F38;}	
+h2 a , h3 a {color:#FE9F38}
+h2 a:hover, h3 a:hover {color:#FECA91}
 
-	
 /* Nav */
 #nav-container {background:rgba(40, 126, 159, 0.3); margin-bottom:2em;}
 #nav-container nav ul li {float:left; padding:1em 1.59em 0.45em 1.59em; background:url('../i/header/dot.png') no-repeat 0px 19px;}
@@ -53,12 +57,14 @@ h3 {margin-bottom:1em; color:#FECA91;}
 #nav-container nav ul li a {font-size:1.2em; padding-top:0.7em; font-weight:200;  }
 /* Slider */	
 #slides {position:relative; width:100%; overflow:hidden; }
-#slides div img {height:100%; border-radius:1em;}
-#slides .caption {position:absolute; top:2em; right:0em; width:26%; color:white; padding:2em 0em; font-size:1.2em;}	
+#slides div.slides_container {margin-bottom:2em;}
+#slides div.image-container {height:420px; width:663px;}
+#slides div img {width:100%; border-radius:1em}
+#slides .caption {position:absolute; top:0em; right:-16em; width:14em; color:white; padding:2em 0em; font-size:1.2em;}	
 #slides .caption p {padding-bottom:1em;}
 #slides .caption ul {margin:0em;}
-#slides .caption ul li {background:url('../i/header/hover.png') no-repeat 0px; list-style-type:none; padding-left:1.5em; padding-bottom:0.5em; padding-top:0.5em;}		
-#slides .caption h2 {color:#FE9F38;}
+#slides .caption ul li {background:url('../i/icon/bullet.png') no-repeat 0px 12px; list-style-type:none; padding-left:1.5em; padding-bottom:0.5em; padding-top:0.5em;}		
+#slides .caption h2 {color:#FE9F38; margin-bottom:0em;}		
 	
 #main {padding-bottom:2em; color:white;}
 section.content {padding:1em 2em; background:rgba(40, 126, 159, 0.3); border-radius:1em;}
@@ -92,6 +98,9 @@ section.profile-list article img {height:195px;}
 section.content.profile {padding:2em 2em;}
 article.profile {margin-top:0em; margin-right:2em;}
 article.profile p {line-height:1.6em; margin-bottom:1em;}
+article.profile table {font-size:1.2em; margin-bottom:2em}
+article.profile td {padding-right:1em; padding-bottom:0.5em;}
+article.profile td.lost-cat {color:red;}
 article.profile div.left {width:62%; margin-left:2em;}
 article.profile img {width:35em; float:left; margin-right:3em; border-radius:1em;}
 /* END - Profile */
@@ -99,14 +108,14 @@ article.profile img {width:35em; float:left; margin-right:3em; border-radius:1em
 /* START - News List */
 .news .content {margin-bottom:2em;}
 .news-container .news-summery {margin-top:1em; margin-bottom:2em; padding:1em; background:rgba(40, 126, 159, 0.3); border-radius:1em;}
-.news-container .news-article {background:rgba(40, 126, 159, 0.3); border-radius:1em; padding:1em;}
-.news-container div.news-content {float:left; width:48em; padding-right:4em; border-right:1px solid #FE9F38;}
+.news-container .news-article {background:rgba(40, 126, 159, 0.3); border-radius:1em; padding:1em; min-height:33em;}
+.news-container div.news-content {float:left; width:51em; padding-right:0em;}
 .news-container h2 {margin-bottom:0.5em;}
 .news-container p {line-height:1.6em; margin-bottom:0.5em;}
 .news-container p.read-more {margin-bottom:0em; float:right;}
 .news-container aside {float:left; width:17em; padding-left:3em; padding-bottom:2em; padding-top:0em; margin-top:1em; min-height:none; border:none;}
-.news-container aside h3 {font-size:1.5em;}
-.news-container aside ul {list-style-type:none; margin-left:0em;}
+.news-container aside h3 {font-size:1.5em; }
+.news-container aside ul {list-style-type:none; margin-left:0em; margin-bottom:3em;}
 .news-container aside ul li {padding-bottom:1em;}
 .news-container aside ul li a {}		
 /* END - News List */
@@ -115,9 +124,41 @@ article.profile img {width:35em; float:left; margin-right:3em; border-radius:1em
 .news-content {}
 /* END - News Article */
 
+/* START - Cat Info Articles List */
+.article-summery {background:rgba(40, 126, 159, 0.3); border-radius:0.5em; padding:0.5em 2em; margin-bottom:1.5em;}
+.article-summery h2 {margin-bottom:0em;}
+/* END - Cat Info Articles List */
+
+/* START - Cat Info Articles */
+
+/* END - Cat Info Articles */
+
 /* START - Contact Page */
-article.contact {}
+#contact-page article {width:50%; float:left; margin-top:1em}
+#contact-page article span {font-size:1.3em; font-weight:bold}
+#contact-page article table {margin-bottom:2em;}
+#contact-page article td {padding: 0.5em 0.5em}
+form#Form_ContactForm {margin-top:1em}	
+form #Form_ContactForm_error {color:red;}	
+form#Form_ContactForm label {width:100%; margin-bottom:0.5em; font-size:1.5em; color:#FE9F38;}
+form#Form_ContactForm input {background:white; border:none; padding:0.25em; margin-bottom:1em; border-radius:0.5em; height:1.5em; width:22em;}
+form#Form_ContactForm textarea {background:white; border:none; padding:0.25em; margin-bottom:1em; border-radius:0.5em; width:31em; height:11em; resize:none;}
+form#Form_ContactForm input#Form_ContactForm_action_doForm {width:5em; height:2em;}			
 /* END - Contact Page */
+
+/* START - Log on Page */
+form#MemberLoginForm_LoginForm {margin-top:1.2}
+form#MemberLoginForm_LoginForm #MemberLoginForm_LoginForm_error {color:red;}
+form#MemberLoginForm_LoginForm label.left {width:100%; margin-bottom:0.5em; font-size:1.5em;}
+form#MemberLoginForm_LoginForm input {background:white; border:none; padding:0.25em; margin-bottom:1em; border-radius:0.5em;}
+form#MemberLoginForm_LoginForm input#MemberLoginForm_LoginForm_Email {} 	
+form#MemberLoginForm_LoginForm input#MemberLoginForm_LoginForm_AuthenticationMethod {}
+form#MemberLoginForm_LoginForm input#MemberLoginForm_LoginForm_Password {}
+form#MemberLoginForm_LoginForm input#MemberLoginForm_LoginForm_Remember {}	
+form#MemberLoginForm_LoginForm div#Remember label {float:left; margin-right:1em;}	
+form#MemberLoginForm_LoginForm input#MemberLoginForm_LoginForm_action_dologin {}		
+					
+/* END - Log on Page */
 
 /*
 }-------------------------------------------------------------
@@ -135,10 +176,10 @@ p.charity {text-align:center; width:100%;  padding:0.5em 0em; font-size:0.9em;}
 #bucket-container div.bucket form textarea {width:100%; margin-bottom:1em; padding:0.3em; border:none; resize:none; height:4.5em;}
 #bucket-container div.bucket form input {width:100%; margin-bottom:1em; padding:0.3em; border:none;}
 #bucket-container div.bucket form input#Form_ContactForm_action_doForm {margin-bottom:0em; width:25%;}				
-#bucket-container ul.col {width:46%; margin:0em 0.5em 0em 0em; list-style-type:none;}
+#bucket-container ul.col {margin:0em 0.5em 0em 0em; width:100%; column-count:2; column-gap:0em; -moz-column-count:2; -moz-column-gap:0em; -webkit-column-count:2; -webkit-column-gap:0em; list-style-type:none;}
 #bucket-container ul.col.right {margin-right:0em;}
 #bucket-container ul.col li {padding-bottom:0.25em;}
-
+#bucket-container .community-button {width:50px; margin-left:4em; margin-top:1em;}
 /*
 }-------------------------------------------------------------
 --- Font {

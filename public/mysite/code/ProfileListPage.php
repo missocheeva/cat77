@@ -10,6 +10,8 @@ class ProfileListPage extends Page {
 		'CatImage' => 'Image'
 	);
 	
+	static $allowed_children = array('ProfilePage');
+	
 	public function getCMSFields(){
 			$fields = parent::getCMSFields();
 			

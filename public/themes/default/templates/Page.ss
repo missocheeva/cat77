@@ -27,7 +27,10 @@
 	
 	<!-- JS -->
 	<% require javascript(themes/default/js/libs/jQuery.js) %>
+	<% require javascript(themes/default/js/libs/html5.js) %>
 	<% require javascript(themes/default/js/script.js) %>
+	<% require javascript(themes/default/js/libs/slides.min.jquery.js) %>
+	<% require javascript(themes/default/js/slider.js) %>
 	
 	<!--[if lt IE 9]><script src="themes/default/js/libs/html5.js"></script><![endif]-->
 </head>

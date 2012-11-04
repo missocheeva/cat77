@@ -2,7 +2,12 @@
 class Page extends SiteTree {
 
 	public static $db = array(
+		"InFooterNav" => "Boolean",
 		"SubTitle" => "VarChar(255)"
+	);
+	
+	public static $defaults = array(
+		'FooterNav' => false
 	);
 
 	public static $has_one = array(
@@ -12,6 +17,7 @@ class Page extends SiteTree {
 		$fields = parent::getCMSFields();
 		
 		$fields->addFieldToTab("Root.Main", new TextField("SubTitle","Sub Title"), "URLSegment");
+		$fields->addFieldToTab('Root.Main', new CheckboxField('InFooterNav', 'Show Link In Footer Navication?'));
 		
 		return $fields;
 	}
@@ -47,6 +53,10 @@ class Page_Controller extends ContentController {
 		//Requirements::themedCSS('layout'); 
 		//Requirements::themedCSS('typography'); 
 		//Requirements::themedCSS('form'); 
+	}
+	
+	public function FooterNav() {
+		return DataObject::get("Page","InFooterNav = 1");
 	}
 
 }

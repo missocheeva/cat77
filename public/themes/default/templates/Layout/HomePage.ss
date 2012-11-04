@@ -1,15 +1,28 @@
-<% require javascript(themes/default/js/libs/jQuery.js) %>
-<% require javascript(themes/default/js/libs/slides.min.jquery.js) %>
-<% require javascript(themes/default/js/slider.js) %>
 <div id="slides">
 	<div class="slides_container">
 		<% loop Slides %>
 			<div>
-				<% control $Image %>
-					$CroppedFill(688,399)
-				<% end_control %>
+				<div class="image-container">
+					<% control $Image %>
+						$CroppedImage(663,420)
+					<% end_control %>
+				</div>	
 				<div class="caption">
-					<p>$Caption</p>
+					<h2>$NameCaption</h2>
+					<% if $Caption %>
+						<p>$Caption</p>
+					<% end_if %>	
+					<ul>
+						<% if $CatBulletOne %>
+							<li>$CatBulletOne</li>
+						<% end_if %>
+						<% if $CatBulletTwo %>
+							<li>$CatBulletTwo</li>
+						<% end_if %>	
+						<% if $CatBulletThree %>
+							<li>$CatBulletThree</li>
+						<% end_if %>
+					</ul>	
 				</div>
 			</div>	
 		<% end_loop %>

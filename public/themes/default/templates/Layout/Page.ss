@@ -1,6 +1,6 @@
 <section class="content">	
 	<h1>$Title</h1>
-	<article class="content-gap">
+	<article>
 		$Content
 		$Form
 	</article>	

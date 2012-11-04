@@ -6,7 +6,9 @@
 	<% control Children %>
 		<article>
 			<a href="$Link" title="$MenuTitle">
-					$CatImage
+				<% control $CatImage %>
+					$CroppedImage(195,195)
+				<% end_control %>
 			</a>	
 		</article>
 	<% end_control %>		

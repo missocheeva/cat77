@@ -7,6 +7,8 @@ class NewsListPage extends Page {
 
 	public static $has_one = array(
 	);
+	
+	static $allowed_children = array('NewsPage');
 
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
@@ -27,7 +29,7 @@ class NewsListPage_Controller extends Page_Controller {
 	
 	public function GetChildren($Limit = 5) {
 		$Children = $this->Children();
-		return $Children->getRange(0, $Limit); 
+		return $Children->limit($Limit, 0); 
 	}
 
 }

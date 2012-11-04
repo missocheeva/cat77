@@ -1,15 +1,11 @@
 $(function() {
 	$('#slides').slides({
 	preload: true,
-	play: 6000,
-	effect: 'fade',
-	fadeSpeed: 1700,
-	generateNextPrev: true,
+	play: 7000,
+	effect: 'slide',
+	slideSpeed: 2000,
+	generateNextPrev: false,
+	generatePagination: false,
 	crossfade: true
 	});
 });
-	//$(function() {
-		//$('.caption').slides({
-		//crossfade: false
-		//});
-	//});

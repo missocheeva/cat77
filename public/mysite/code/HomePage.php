@@ -33,7 +33,7 @@ class HomePage extends Page {
 			
 			$config = GridFieldConfig_RelationEditor::create();
 			$config->getComponentByType('GridFieldDataColumns')->setDisplayFields(array(
-				  'Caption' => 'Caption'
+				  'NameCaption' => 'Name'
 			));
 			$config->addComponent(new GridFieldSortableRows('SortColumn'));
 			$field = new GridField("Slides", "Slide images", $this->Slides(), $config);

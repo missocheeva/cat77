@@ -28,3 +28,5 @@ i18n::set_locale('en_GB');
 
 // Enable nested URLs for this site (e.g. page/sub-page/)
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
+
+Object::add_extension('Image','CroppedFillImageExtension');

@@ -4,18 +4,15 @@
 			<div class="bucket first">
 				<h3>Community</h3>
 				<p>Love cats? Great so do we, join our cat crazed group on Facebook or follow us on Twitter.</p>
+				<a href="http://www.facebook.com/pages/Cat-Action-Trust-1977-Jersey-Branch/187414394603481" target="_blank" title="join us on facebook"><img class="community-button" src="themes/default/i/icon/facebook.png" alt="facebook" /></a>
+				<a href="/" title="follow us on twitter" target="_blank"><img class="community-button" src="themes/default/i/icon/twitter.png" alt="twitter" /></a>
 			</div>
 			<div class="bucket">
 				<h3>What we do</h3>
-				<ul class="col left">
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
-				</ul>
-				<ul class="col left">
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
-					<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
+				<ul class="col">
+					<% loop FooterNav %>
+						<li class="<% if LinkingMode = section %> selected<% else_if LinkingMode = current %> selected<% end_if %>">&raquo; <a href="$Link" title="$MenuTitle | Cat Action Trust 1977 Jersey">$MenuTitle</a></li>
+					<% end_loop %>	
 				</ul>
 			</div>
 			<div class="bucket">
